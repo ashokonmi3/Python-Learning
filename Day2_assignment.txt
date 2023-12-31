@@ -1,0 +1,53 @@
+Q1 Program to Check Common Letters in Two Input Strings
+Task
+Given sets of integers, and , print their symmetric difference in ascending order. The term symmetric difference indicates those values that exist in either or but do not exist in both.
+
+Input Format
+The first line of input contains an integer, . The second line contains space-separated integers. The third line contains an integer, . The fourth line contains space-separated integers.
+
+Output Format
+Output the symmetric difference integers in ascending order, one per line.
+
+Sample Input
+
+4 2 4 5 9 4 2 4 11 12
+
+Sample Output
+
+5 9 11 12
+==============================
+
+Python Program to Count the Number of Vowels Present in a String using Sets
+
+================================
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order.
+
+Example 1:
+
+Input: s = "()" Output: true Example 2:
+
+Input: s = "()[]{}" Output: true Example 3:
+
+Input: s = "(]" Output: false Example 4:
+
+Input: s = "([)]" Output: false Example 5:
+
+Input: s = "{[]}" Output: true
+
+Constraints:
+
+1 <= s.length <= 104 s consists of parentheses only '()[]{}'.
+=========================
+4) If cost price and selling price of an item is input through the keyboard, write a program to determine whether the seller has keyboard, write a program to determine whether the seller has
+made profit or incurred loss. Also determine how much profit he made or loss he incurred.
+===============
+5) Any integer is input through the keyboard. Write a program to find out whether it is an odd number or even number.
+======================
+6) Any year is input through the keyboard. Write a program to determine whether the year is a leap year or not.¶
+(Hint: Use the % (modulus) operator)
+====================
+8) A five-digit number is entered through the keyboard. Write aprogram to obtain the reverse

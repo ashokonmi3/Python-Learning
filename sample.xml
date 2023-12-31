@@ -1,0 +1,16 @@
+<Catalog>
+<Books>
+<Book id="67" price="7.95">
+<Title>Do Androids Dream of Electric Sheep?</Title>
+<Author>Philip K. Dick</Author>
+</Book>
+<Book id="5" price="5.95">
+<Title>The Colour of Magic</Title>
+<Author>Terry Pratchett</Author>
+</Book>
+<Book id="7" price="6.95">
+<Title>The Eye of The World</Title>
+<Author>Robert Jordan</Author>
+</Book>
+</Books>
+</Catalog>

@@ -1,0 +1,6 @@
+{
+  "Test_Suite.py::PythonOrgSearch::test_02_search_by_name": true,
+  "Test_Suite1.py::SearchText::test_search_by_text": true,
+  "Test_Suite2.py::PythonOrgSearch1::test_03_search_in_python_org": true,
+  "Test_Suite2.py::PythonOrgSearch1::test_04_search_by_name": true
+}

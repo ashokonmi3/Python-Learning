@@ -1,0 +1,14 @@
+1 How a C program compiled
+2 C program memory structure
+3 How to swap 2 variables( apart from , and +/- operator)
+4 check if it is perllindrome (NITIN)
+5 print the  reverse half of a string (argentina.. negratina)
+6 write a program to check if the string is startswith, endswith, capitalize
+7 For a list ["foo", "bar", "baz"] add an item in the list "bar", what's the cleanest way to get its index (1) in Python?
+8 Best way to check if a list is empty
+9 Getting the last element of a list in Python
+10 How to clone or copy a list?
+11 How can I count the occurrences of a list item in Python?
+12 How do I remove the first Item from a Python list?
+13 Write a program to create a buffer of length 5
+14 Convert previous assignment into user input form

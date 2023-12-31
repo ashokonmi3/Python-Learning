@@ -1,0 +1,6 @@
+Thisabcdmy file.
+ThAppend example string
+but this one is mine.
+
+abc
+cde

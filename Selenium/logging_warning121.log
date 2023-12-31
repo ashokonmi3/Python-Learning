@@ -1,0 +1,113 @@
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53297/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Browser started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53297/session/b3352681c4ab8d3768dcd4c148fc7805/window/current/maximize {"windowHandle": "current", "sessionId": "b3352681c4ab8d3768dcd4c148fc7805"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53297/session/b3352681c4ab8d3768dcd4c148fc7805/url {"url": "http://www.pyasdfthon.org", "sessionId": "b3352681c4ab8d3768dcd4c148fc7805"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:maximized
+DEBUG:root:version printed
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:53297/session/b3352681c4ab8d3768dcd4c148fc7805 {"sessionId": "b3352681c4ab8d3768dcd4c148fc7805"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53348/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Browser started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53348/session/f62431696109ce7986c937f6ccd23521/window/current/maximize {"windowHandle": "current", "sessionId": "f62431696109ce7986c937f6ccd23521"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53348/session/f62431696109ce7986c937f6ccd23521/url {"url": "http://www.pyasdfthon.org", "sessionId": "f62431696109ce7986c937f6ccd23521"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:maximized
+DEBUG:root:version printed
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:53348/session/f62431696109ce7986c937f6ccd23521 {"sessionId": "f62431696109ce7986c937f6ccd23521"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53373/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Browser started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53373/session/7768954852670c8954c3cb026eab2466/window/current/maximize {"windowHandle": "current", "sessionId": "7768954852670c8954c3cb026eab2466"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53373/session/7768954852670c8954c3cb026eab2466/url {"url": "http://www.pyasdfthon.org", "sessionId": "7768954852670c8954c3cb026eab2466"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:maximized
+DEBUG:root:version printed
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:53373/session/7768954852670c8954c3cb026eab2466 {"sessionId": "7768954852670c8954c3cb026eab2466"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53402/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Browser started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53402/session/62b43cf41f36eaa51535ad90946ebb4e/window/current/maximize {"windowHandle": "current", "sessionId": "62b43cf41f36eaa51535ad90946ebb4e"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53402/session/62b43cf41f36eaa51535ad90946ebb4e/url {"url": "http://www.pyasdfthon.org", "sessionId": "62b43cf41f36eaa51535ad90946ebb4e"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:maximized
+DEBUG:root:version printed
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:53402/session/62b43cf41f36eaa51535ad90946ebb4e {"sessionId": "62b43cf41f36eaa51535ad90946ebb4e"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53432/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Browser started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53432/session/4247930dc0e2391ff7b60b36ab2904f5/window/current/maximize {"windowHandle": "current", "sessionId": "4247930dc0e2391ff7b60b36ab2904f5"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53432/session/4247930dc0e2391ff7b60b36ab2904f5/url {"url": "http://www.pyasdfthon.org", "sessionId": "4247930dc0e2391ff7b60b36ab2904f5"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:maximized
+DEBUG:root:version printed
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:53432/session/4247930dc0e2391ff7b60b36ab2904f5 {"sessionId": "4247930dc0e2391ff7b60b36ab2904f5"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53463/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Browser started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53463/session/e58003ba1dfebe7bbbf7f92f3912bf26/window/current/maximize {"windowHandle": "current", "sessionId": "e58003ba1dfebe7bbbf7f92f3912bf26"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53463/session/e58003ba1dfebe7bbbf7f92f3912bf26/url {"url": "http://www.pyasdfthon.org", "sessionId": "e58003ba1dfebe7bbbf7f92f3912bf26"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:root:maximized
+DEBUG:root:version printed
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:53463/session/e58003ba1dfebe7bbbf7f92f3912bf26 {"sessionId": "e58003ba1dfebe7bbbf7f92f3912bf26"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53502/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Browser started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53502/session/b56db4a1f275e61e1cf797dcd7f23c80/window/current/maximize {"windowHandle": "current", "sessionId": "b56db4a1f275e61e1cf797dcd7f23c80"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53502/session/b56db4a1f275e61e1cf797dcd7f23c80/url {"url": "http://www.ksrtc.in/oprs-web/", "sessionId": "b56db4a1f275e61e1cf797dcd7f23c80"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53502/session/b56db4a1f275e61e1cf797dcd7f23c80/element {"using": "name", "value": "searchBtnasfsd", "sessionId": "b56db4a1f275e61e1cf797dcd7f23c80"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53538/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Browser started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53538/session/c03b93221583d6d803f04de141735c5f/window/current/maximize {"windowHandle": "current", "sessionId": "c03b93221583d6d803f04de141735c5f"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53538/session/c03b93221583d6d803f04de141735c5f/url {"url": "http://www.ksrtc.in/oprs-web/", "sessionId": "c03b93221583d6d803f04de141735c5f"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53538/session/c03b93221583d6d803f04de141735c5f/element {"using": "name", "value": "searchBtnasfsd", "sessionId": "c03b93221583d6d803f04de141735c5f"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53589/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Browser started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53589/session/be924d1552bf210071ec940bfcda96f0/window/current/maximize {"windowHandle": "current", "sessionId": "be924d1552bf210071ec940bfcda96f0"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53589/session/be924d1552bf210071ec940bfcda96f0/url {"url": "http://www.ksrtc.in/oprs-web/", "sessionId": "be924d1552bf210071ec940bfcda96f0"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53589/session/be924d1552bf210071ec940bfcda96f0/element {"using": "name", "value": "searchBtnasfsd", "sessionId": "be924d1552bf210071ec940bfcda96f0"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53649/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Browser started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53649/session/ff78d64ea794b357d59b85ac83df2763/window/current/maximize {"windowHandle": "current", "sessionId": "ff78d64ea794b357d59b85ac83df2763"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53649/session/ff78d64ea794b357d59b85ac83df2763/url {"url": "http://www.ksrtc.in/oprs-web/", "sessionId": "ff78d64ea794b357d59b85ac83df2763"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53649/session/ff78d64ea794b357d59b85ac83df2763/element {"using": "name", "value": "searchBtn", "sessionId": "ff78d64ea794b357d59b85ac83df2763"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:root:maximized
+DEBUG:root:version printed
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:53649/session/ff78d64ea794b357d59b85ac83df2763 {"sessionId": "ff78d64ea794b357d59b85ac83df2763"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:root:maximized
+ERROR:root:maximized
+ERROR:root:maximized
+CRITICAL:root:Browser started
+ERROR:root:maximized
+CRITICAL:root:Browser started
+ERROR:root:maximized

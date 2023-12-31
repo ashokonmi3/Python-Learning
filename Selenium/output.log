@@ -1,0 +1,24 @@
+CRITICAL:root:Browser started
+ERROR:root:maximized
+CRITICAL:root:Browser started
+CRITICAL:root:Browser started
+CRITICAL:root:Browser started
+ERROR:root:maximized
+CRITICAL:root:Browser started
+CRITICAL:root:Browser started
+CRITICAL:root:Browser started
+CRITICAL:root:Browser started
+INFO:root:maximized
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62930/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 127.0.0.1:62930
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62930 "POST /session HTTP/1.1" 200 683
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+CRITICAL:root:Browser started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62930/session/2b7e3838e95ebb6d0017c2d32f4ec055/window/maximize {}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62930 "POST /session/2b7e3838e95ebb6d0017c2d32f4ec055/window/maximize HTTP/1.1" 200 52
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:62930/session/2b7e3838e95ebb6d0017c2d32f4ec055/url {"url": "http://www.ksrtc.in/oprs-web/"}
+DEBUG:urllib3.connectionpool:http://127.0.0.1:62930 "POST /session/2b7e3838e95ebb6d0017c2d32f4ec055/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:url value=http://www.ksrtc.in/oprs-web/
+INFO:root:maximized

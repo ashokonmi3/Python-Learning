@@ -1,0 +1,4 @@
+pytest-html module needs to be installed
+
+
+pytest -v -s ./test-reporting-demo.py --html=a.html
