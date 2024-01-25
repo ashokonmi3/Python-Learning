@@ -433,3 +433,31 @@ mycursor.execute(
 
 # print(mycursor.rowcount, "record(s) affected")
 # ======================
+# Passing parameter in query
+# Connect to the database
+connection = mysql.connector.connect(
+    host="your_host",
+    user="your_user",
+    password="your_password",
+    database="your_database"
+)
+
+# Create a cursor object
+cursor = connection.cursor()
+
+# Example data
+user_id = 1
+user_name = "John Doe"
+
+# SQL query with placeholders
+sql_query = "INSERT INTO users (id, name) VALUES (%s, %s)"
+
+# Execute the query with parameters
+cursor.execute(sql_query, (user_id, user_name))
+
+# Commit the changes to the database
+connection.commit()
+
+# Close the cursor and connection
+cursor.close()
+connection.close()
