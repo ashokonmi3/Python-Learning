@@ -19,6 +19,7 @@
 
 import unittest
 
+
 # def add(x, y):
 #     return x + y
 # #
@@ -80,9 +81,6 @@ import unittest
 # This means you can use the class and its properties inside that method rather than a particular instance.
 
 
-import unittest
-
-
 # class TestFixtures(unittest.TestCase):
 
 #     def setUp(self):
@@ -105,7 +103,6 @@ import unittest
 #     def test2(self):
 #         """Two"""
 #         print("Test2")
-
 #         result = self.a-self.b
 #         self.assertTrue(result == -10)
 
@@ -143,9 +140,6 @@ import unittest
 #     unittest.main()
 
 
-import unittest
-
-
 # class TestStringMethods(unittest.TestCase):
 
 #     def test_upper(self):
@@ -156,22 +150,23 @@ import unittest
 #         self.assertFalse('FOO'.isupper())
 
 #     def test_split(self):
-#         s = 'hello world python'
+#         s = 'hello world'
 #         self.assertEqual(s.split(), ['hello', 'world'])
-#         # check that s.split fails when the separator is not a string
+
+#     def test_error(self):
+#         s = 'hello world python'
 #         with self.assertRaises(TypeError):
 #             s.split(2)
 
 
 # if __name__ == '__main__':
 #     unittest.main()
-#
+
+
 # suite = unittest.TestLoader().loadTestsFromTestCase(TestStringMethods)
 # unittest.TextTestRunner(verbosity=2).run(suite)
 
 # ====================================
-#
-#
 # import unittest
 
 
@@ -187,7 +182,7 @@ import unittest
 
 # if __name__ == '__main__':
 #     unittest.main()
-
+# ===========================================
 
 class suiteTest(unittest.TestCase):
     a = 50
@@ -210,7 +205,7 @@ class suiteTest(unittest.TestCase):
         result = self.a/self.b
         self.assertTrue(result == 1)
 
-    @unittest.expectedFailure
+    @unittest.expectedFailure  # x will be result
     def testmul(self):
         """mul"""
         result = self.a*self.b

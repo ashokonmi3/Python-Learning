@@ -1,4 +1,9 @@
 This is my file.
-ThAppend example stringbut this one is mine.
-This is to append
-This will be last line in the file
+Th#####Append example string#### one is mine.
+
+This is append mode we need to use 'a' for append
+When we append data will be added at end
+
+seek(5,0)
+seek(10,1)
+seek(-5,2)
