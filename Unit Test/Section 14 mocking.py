@@ -15,9 +15,11 @@
 # Note: The id value may vary.
 
 # Solution 1
+from unittest.mock import Mock, patch
+import random
 from unittest.mock import patch
 import unittest
-# from unittest.mock import Mock
+from unittest.mock import Mock
 
 
 # mock = Mock(name='first_mock')
@@ -51,8 +53,8 @@ import unittest
 
 # Solution 2
 
-# import random
-# from unittest.mock import Mock
+import random
+from unittest.mock import Mock
 
 
 # techs = ['python', 'sql', 'java', 'aws', 'c++']
@@ -97,7 +99,7 @@ import unittest
 # print(random.choice.call_count)
 
 
-# # Alternative solution with patch():
+# # # Alternative solution with patch():
 
 
 # techs = ['python', 'sql', 'java', 'aws', 'c++']
@@ -121,9 +123,6 @@ import unittest
 # python
 # Solution 4
 # Solution:
-
-import random
-from unittest.mock import Mock, patch
 
 
 # class Programmer:
@@ -242,8 +241,8 @@ from unittest.mock import Mock, patch
 
 
 # Solution 6
-# import random
-# from unittest.mock import patch
+import random
+from unittest.mock import patch
 
 
 # class Programmer:
@@ -292,9 +291,9 @@ from unittest.mock import Mock, patch
 
 
 # Solution 7
-# import unittest
-# from unittest.mock import patch
-# # from code_generator import get_code
+import unittest
+from unittest.mock import patch
+# from code_generator import get_code
 
 # import random
 
@@ -347,7 +346,7 @@ from unittest.mock import Mock, patch
 # You only need to define the appropriate tests. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 
-# Solution 9
+# # Solution 9
 # import unittest
 # from unittest.mock import patch
 # from message_generator import get_message
@@ -465,23 +464,23 @@ from unittest.mock import Mock, patch
 # Solution 12
 # import unittest
 # from unittest.mock import patch
-from employees import Programmer
+# from employees import Programmer
 
 
-class TestProgrammer(unittest.TestCase):
-    def setUp(self):
-        self.programmer = Programmer()
-        self.programmer.add_tech('python') \
-            .add_tech('sql') \
-            .add_tech('java') \
-            .add_tech('c++') \
-            .add_tech('aws')
+# class TestProgrammer(unittest.TestCase):
+#     def setUp(self):
+#         self.programmer = Programmer()
+#         self.programmer.add_tech('python') \
+#             .add_tech('sql') \
+#             .add_tech('java') \
+#             .add_tech('c++') \
+#             .add_tech('aws')
 
-    @patch.object(Programmer, 'get_random_tech')
-    def test_get_random_tech_mocked_python(self, mock_tech):
-        mock_tech.return_value = 'python'
-        result = self.programmer.get_random_tech()
-        self.assertEqual(result, 'python')
+#     @patch.object(Programmer, 'get_random_tech')
+#     def test_get_random_tech_mocked_python(self, mock_tech):
+#         mock_tech.return_value = 'python'
+#         result = self.programmer.get_random_tech()
+#         self.assertEqual(result, 'python')
 
 
 # ==================================================================================

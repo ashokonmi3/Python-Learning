@@ -39,8 +39,10 @@
 # You only need to implement the class and the appropriate test methods. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 1
-# import unittest
-# import math
+import string
+import random
+import unittest
+import math
 
 
 # def circle_area(radius):
@@ -179,16 +181,16 @@
 
 # class TestCalculateTax(unittest.TestCase):
 #     def test_tax_with_eighteen_age(self):
-#         self.assertEqual(calculate_tax(60000, 18), 6000)
+#         self.assertEqual(calculate_tax(60000,5, 18), 5000)
 
 #     def test_tax_with_nineteen_age(self):
-#         self.assertEqual(calculate_tax(60000, 19), 10200)
+#         self.assertEqual(calculate_tax(60000, 8, 19), 480000)
 
 #     def test_tax_with_sixty_five_age(self):
-#         self.assertEqual(calculate_tax(60000, 65), 10200)
+#         self.assertEqual(calculate_tax(60000, 9, 65), 540000)
 
 #     def test_tax_with_sixty_six_age(self):
-#         self.assertEqual(calculate_tax(60000, 66), 9000)
+#         self.assertEqual(calculate_tax(60000, 6, 66), 8000)
 
 
 # ==================================================================================
@@ -279,6 +281,7 @@
 # Solution 5
 # import unittest
 # from tax import income_tax
+# from tax import calculate_tax
 
 
 # class TestIncomeTax(unittest.TestCase):
@@ -290,13 +293,30 @@
 
 #     def test_tax_above_threshold(self):
 #         self.assertEqual(income_tax(100000), 19170.8)
+
+# class TestCalculateTax(unittest.TestCase):
+#     def test_tax_twenty_percent_with_eighteen_age(self):
+#         self.assertEqual(calculate_tax(60000, 18, 20), 1080000)
+
+#     def test_tax_twenty_percent_with_nineteen_age(self):
+#         self.assertEqual(calculate_tax(60000, 19, 20), 1140000)
+
+#     def test_tax_twenty_percent_with_sixty_five_age(self):
+#         self.assertEqual(calculate_tax(60000, 65, 20), 3900000)
+
+#     def test_tax_twenty_percent_with_sixty_six_age(self):
+#         self.assertEqual(calculate_tax(60000, 66, 20), 3960000)
+
 # ==================================================================================
 # Exercise 6
 # Here's an example of a simple function in Python that adds two numbers together:
 
+import unittest
+#
 
-# def add_numbers(a, b):
-#     return a + b
+
+def add_numbers(a, b):
+    return a + b
 
 
 # Create a class called TestAddNumbers that inherits from unittest.TestCase. Then define three test methods:
@@ -351,8 +371,6 @@
 # Solution 7
 # Sample solution:
 
-# import unittest
-
 
 # def is_even(num):
 #     if num % 2 == 0:
@@ -397,8 +415,6 @@
 
 # Solution 8
 # Sample solution:
-
-# import unittest
 
 
 # def sort_numbers(nums):
@@ -548,7 +564,6 @@
 
 
 # Solution 10
-# import unittest
 
 
 # def calculate(numbers, operation):
@@ -632,7 +647,6 @@
 # Three assertion methods should be used in the solution.
 
 # Solution 11
-# import unittest
 
 
 # def calculate_bmi(height, weight):
@@ -688,7 +702,6 @@
 # Five assertion methods should be used in the solution.
 
 # Solution 12
-# import unittest
 
 
 # def is_valid_password(password):
@@ -750,29 +763,29 @@
 
 
 # Solution 13
-# import random
-# import string
-# import unittest
 
 
-# def generate_password(n):
-#     password = ''.join(
-#         random.choices(
-#             string.ascii_uppercase
-#             + string.ascii_lowercase
-#             + string.digits,
-#             k=n,
-#         )
-#     )
-#     return password
+def generate_password(n):
+    password = ''.join(
+        random.choices(
+            string.ascii_uppercase
+            + string.ascii_lowercase
+            + string.digits,
+            k=n,
+        )
+    )
+    return password
 
 
-# class TestGeneratePassword(unittest.TestCase):
-#     def test_generate_password(self):
-#         result = generate_password(10)
-#         self.assertEqual(len(result), 10)
-#         self.assertTrue(any(c.isupper() for c in result))
-#         self.assertTrue(any(c.islower() for c in result))
-#         self.assertTrue(any(c.isdigit() for c in result))
+class TestGeneratePassword(unittest.TestCase):
+    def test_generate_password(self):
+        result = generate_password(10)
+        self.assertEqual(len(result), 10)
+        self.assertTrue(any(c.isupper() for c in result))
+        self.assertTrue(any(c.islower() for c in result))
+        self.assertTrue(any(c.isdigit() for c in result))
+
 
 # ==================================================================================
+if __name__ == '__main__':
+    unittest.main()

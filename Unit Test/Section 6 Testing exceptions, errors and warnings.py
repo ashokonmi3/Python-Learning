@@ -1,4 +1,5 @@
 
+import warnings
 import unittest
 
 # Exercise 1
@@ -49,7 +50,7 @@ import unittest
 # test_negative_price() - with negative price the function should rasie a ValueError
 
 # Solution 2
-# import unittest
+import unittest
 
 
 # def calculate_discount(price, discount_rate):
@@ -102,7 +103,7 @@ import unittest
 # These test methods test the function for invalid inputs and check that the function raises the appropriate exceptions. Three assertion methods should be used in each test method.
 
 # Solution 3
-# import unittest
+import unittest
 
 
 # def calculate_area(length, width):
@@ -451,8 +452,8 @@ import unittest
 # These test methods test the function for invalid inputs and check that the function raises the appropriate exceptions with specific error messages. Six assertion methods should be used in the solution.
 
 # Solution 8
-# import unittest
-# import warnings
+import unittest
+import warnings
 
 
 # def calculate_salary(wages, hours):
@@ -536,22 +537,21 @@ import unittest
 
 
 # Solution 9
-# import unittest
-import warnings
+import unittest
 
 
-class User:
-    def __init__(self, password):
-        self.password = password
-        if len(password) < 8:
-            warnings.warn("Password too short", category=Warning)
+# class User:
+#     def __init__(self, password):
+#         self.password = password
+#         if len(password) < 8:
+#             warnings.warn("Password too short", category=Warning)
 
 
-class TestUser(unittest.TestCase):
-    def test_short_password_warning(self):
-        with self.assertWarns(Warning):
-            user = User("1234567")
-        self.assertEqual(user.password, "1234567")
+# class TestUser(unittest.TestCase):
+#     def test_short_password_warning(self):
+#         with self.assertWarns(Warning):
+#             user = User("1234567")
+#         self.assertEqual(user.password, "1234567")
 # ==================================================================================
 
 # Exercise 10

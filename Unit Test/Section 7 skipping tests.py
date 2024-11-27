@@ -1,3 +1,6 @@
+import os
+import sys
+from datetime import date
 import unittest
 
 # Exercise 1
@@ -20,20 +23,18 @@ import unittest
 #         self.assertTrue(hasattr(Container, 'code'), msg)
 
 
-# Modify the implementation of the TestContainer class so that the test_container_has_code_attribute() test is skipped, passing the reason for the skipping:
-
-
+# Modify the implementation of the TestContainer class so that the test_container_has_code_attribute()
+# test is skipped, passing the reason for the skipping:
 # 'The Container class requires implementation.'
-
-
 # Tip: Use the unittest.skip() decorator.
 
-
-# You only need to modify the implementation of the TestContainer class. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
+# You only need to modify the implementation of the TestContainer class.
+# During the solution verification, the tests are run and in case of any errors,
+# the test report will be printed to the console.
 
 
 # Solution 1
-# import unittest
+import unittest
 
 
 # class Container:
@@ -91,12 +92,11 @@ import unittest
 # You only need to modify the implementation of the TestContainer class. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 2
-from datetime import date
-import unittest
 
 
 # class Container:
 #     def __init__(self):
+#         print(f"Todays day is {date.today().day}")
 #         if date.today().day % 2 == 0:
 #             self.code = 'XC-0'
 #         else:
@@ -159,34 +159,32 @@ import unittest
 
 
 # Solution 3
-import sys
-import unittest
 
 
-# class Container:
-#     def __init__(self):
-#         if sys.platform.startswith('win'):
-#             self.code = 'XC-win'
-#         else:
-#             self.code = f'XC-{sys.platform}'
+class Container:
+    def __init__(self):
+        if sys.platform.startswith('win'):
+            self.code = 'XC-win'
+        else:
+            self.code = f'XC-{sys.platform}'
 
 
-# class TestContainer(unittest.TestCase):
-#     @unittest.skipUnless(
-#         sys.platform.startswith('win'), 'Requires Windows.'
-#     )
-#     def test_code_is_XC_win_on_Windows(self):
-#         c = Container()
-#         self.assertEqual(c.code, 'XC-win', 'Expected code to be XC-win.')
+class TestContainer(unittest.TestCase):
+    @unittest.skipUnless(
+        sys.platform.startswith('win'), 'Requires Windows.'
+    )
+    def test_code_is_XC_win_on_Windows(self):
+        c = Container()
+        self.assertEqual(c.code, 'XC-win', 'Expected code to be XC-win.')
 
-#     @unittest.skipUnless(
-#         sys.platform.startswith('linux'), 'Requires Linux.'
-#     )
-#     def test_code_starts_with_XC_on_Linux(self):
-#         c = Container()
-#         self.assertEqual(
-#             c.code, 'XC-linux', 'Expected code to be XC-linux.'
-#         )
+    @unittest.skipUnless(
+        sys.platform.startswith('linux'), 'Requires Linux.'
+    )
+    def test_code_starts_with_XC_on_Linux(self):
+        c = Container()
+        self.assertEqual(
+            c.code, 'XC-linux', 'Expected code to be XC-linux.'
+        )
 
 # ==================================================================================
 
@@ -251,8 +249,6 @@ import unittest
 # However, you should add a @unittest.skipUnless decorator that checks whether the file test.txt exists before running the test. If the file does not exist, the test should be skipped with the message "File not found".
 
 # Solution 5
-# import unittest
-# import os
 
 
 # class FileReader:
@@ -301,6 +297,7 @@ import unittest
 # class DataTransformer:
 #     def transform(self, data):
 #         # Code to transform data
+#         transformed_data = "**********************"+data+"**********************"
 #         return transformed_data
 
 
@@ -328,28 +325,30 @@ import unittest
 
 
 # Solution 7
-# import unittest
 
 
-# class PaymentGateway:
-#     def process_payment(self, amount):
-#         # Code to process payment
-#         return True
+class PaymentGateway:
+    def process_payment(self, amount):
+        # Code to process payment
+        return True
 
 
-# def is_production_environment():
-#     # Code to check if it is a production environment
-#     return True
+def is_production_environment():
+    # Code to check if it is a production environment
+    return True
 
 
-# class TestPaymentGateway(unittest.TestCase):
-#     @unittest.skipIf(
-#         not is_production_environment(),
-#         "Not in production environment",
-#     )
-#     def test_process_payment(self):
-#         gateway = PaymentGateway()
-#         result = gateway.process_payment(100.0)
-#         self.assertTrue(result)
+class TestPaymentGateway(unittest.TestCase):
+    @unittest.skipIf(
+        not is_production_environment(),
+        "Not in production environment",
+    )
+    def test_process_payment(self):
+        gateway = PaymentGateway()
+        result = gateway.process_payment(100.0)
+        self.assertTrue(result)
+
 
 # ==================================================================================
+if __name__ == '__main__':
+    unittest.main()

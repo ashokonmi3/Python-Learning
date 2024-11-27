@@ -46,8 +46,8 @@ import unittest
 # During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 1
-# import sys
-# import unittest
+import sys
+import unittest
 
 
 # class Container:
@@ -80,8 +80,8 @@ import unittest
 # The following code is given:
 
 
-# import sys
-# import unittest
+import sys
+import unittest
 
 
 # class Container:
@@ -117,8 +117,8 @@ import unittest
 # During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 2
-# import sys
-# import unittest
+import sys
+import unittest
 
 
 # class Container:
@@ -198,8 +198,8 @@ import unittest
 
 
 # Solution 3
-# import sys
-# import unittest
+import sys
+import unittest
 
 
 # class Container:

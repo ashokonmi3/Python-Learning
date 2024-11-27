@@ -1,0 +1,28 @@
+Problem Description:
+Create a library system where different types of books are stored, 
+and their properties and behavior are managed using inheritance.
+
+Create a base class Book:
+
+The base class should have:
+Attributes: title, author, year_of_publication.
+Method: display_info() which displays the title, author, and year of publication of the book.
+Create a derived class TextBook:
+
+The derived class should inherit from Book and add an additional attribute: subject.
+Method display_info() should be overridden in the derived class to also display the subject 
+of the textbook along with the basic information from the base class.
+Create another derived class Novel:
+
+The Novel class should also inherit from Book and have an additional attribute: genre.
+Method display_info() should be overridden to display the genre along with
+ the basic book details.
+Create a class Library:
+
+This class should hold a list of Book objects (which can be either TextBook or Novel).
+Method add_book(book) to add a book to the library.
+Method display_all_books() to display the details of all books in the library.
+Requirements:
+Use inheritance to extend the Book class.
+Override the display_info() method in derived classes.
+Use super() to call the base class method if needed.

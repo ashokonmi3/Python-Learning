@@ -7,11 +7,12 @@
 # ls -la the database will be created
 #
 # from sqlite3 import *
+import mysql.connector
 import sqlite3
 import sys
 
-# conn = sqlite3.connect('test.db')
-# print("Opened database successfully")
+conn = sqlite3.connect('test.db')
+print("Opened database successfully")
 # print(type(conn))
 # # conn = sqlite3.connect('my_database233231.db')
 
@@ -91,7 +92,6 @@ import sys
 # #
 #
 # ===============================
-import mysql.connector
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
@@ -116,18 +116,18 @@ print(mydb)
 # ====================
 # You can check if a database exist by listing all databases in your system by using the "SHOW DATABASES" statement:
 
-mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    passwd="root123"
-)
+# mydb = mysql.connector.connect(
+#     host="localhost",
+#     user="root",
+#     passwd="root123"
+# )
 
-mycursor = mydb.cursor()
+# mycursor = mydb.cursor()
 
-mycursor.execute("SHOW DATABASES")
+# mycursor.execute("SHOW DATABASES")
 
-for x in mycursor:
-    print(x)
+# for x in mycursor:
+#     print(x)
 
 # ======================
 
@@ -179,17 +179,17 @@ for x in mycursor:
 # ============================
 # create table with primary key
 
-mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    passwd="root123",
-    database="mydatabase5"
-)
+# mydb = mysql.connector.connect(
+#     host="localhost",
+#     user="root",
+#     passwd="root123",
+#     database="mydatabase5"
+# )
 
-mycursor = mydb.cursor()
+# mycursor = mydb.cursor()
 
-mycursor.execute(
-    "CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255))")
+# mycursor.execute(
+#     "CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255))")
 # ==========================
 # If the table already exists, use the ALTER TABLE keyword:
 

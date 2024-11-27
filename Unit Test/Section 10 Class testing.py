@@ -1,4 +1,14 @@
 
+# Automation tools
+# selenium -- browser -- python
+# Appium - mobile application testing - python
+# Playwright - browser automation - python
+
+# Jmeter - performance testing tool -- java
+
+# POST MAN - used for REST API testing
+
+
 # Exercise 1
 # The implementation of the SimpleTaxCalculator class is given in the tax.py file. Import the SimpleTaxCalculator class from the tax module into the exercise.py file. Next, create a TestIncomeTax class that inherits from unittest.TestCase. Add the setUpClass() method to create an instance of the SimpleTaxCalculator class and assign it to the attribute named calc of the TestIncomeTax class.
 
@@ -17,6 +27,8 @@
 # You only need to implement the class and the appropriate test methods. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 1
+from notebook import Note
+from emp import Employee
 import unittest
 from tax import SimpleTaxCalculator
 
@@ -57,8 +69,8 @@ from tax import SimpleTaxCalculator
 # You only need to implement the class and the appropriate test methods. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 2
-# import unittest
-# from tax import SimpleTaxCalculator
+import unittest
+from tax import SimpleTaxCalculator
 
 
 # class TestIncomeTax(unittest.TestCase):
@@ -283,8 +295,8 @@ from tax import SimpleTaxCalculator
 # You only need to implement the appropriate test method. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 6
-import unittest
-from emp import Employee
+# import unittest
+# from emp import Employee
 
 
 # class TestEmployee(unittest.TestCase):
@@ -431,7 +443,6 @@ from emp import Employee
 
 # Solution 11
 # import unittest
-from notebook import Note
 
 
 # class TestNote(unittest.TestCase):
@@ -615,35 +626,35 @@ from notebook import Note
 # Solution 16
 # Sample solution:
 
-# import unittest
+import unittest
 
 
-# class ShoppingCart:
-#     def __init__(self):
-#         self.items = []
+class ShoppingCart:
+    def __init__(self):
+        self.items = []
 
-#     def add_item(self, item):
-#         self.items.append(item)
+    def add_item(self, item):
+        self.items.append(item)
 
-#     def remove_item(self, item):
-#         self.items.remove(item)
+    def remove_item(self, item):
+        self.items.remove(item)
 
 
-# class TestShoppingCart(unittest.TestCase):
-#     def test_add_remove_item(self):
-#         cart = ShoppingCart()
-#         cart.add_item("apple")
-#         self.assertIn("apple", cart.items)
+class TestShoppingCart(unittest.TestCase):
+    def test_add_remove_item(self):
+        cart = ShoppingCart()
+        cart.add_item("apple")
+        self.assertIn("apple", cart.items)
 
-#         cart.add_item("banana")
-#         self.assertIn("apple", cart.items)
-#         self.assertIn("banana", cart.items)
+        cart.add_item("banana")
+        self.assertIn("apple", cart.items)
+        self.assertIn("banana", cart.items)
 
-#         cart.remove_item("apple")
-#         self.assertNotIn("apple", cart.items)
+        cart.remove_item("apple")
+        self.assertNotIn("apple", cart.items)
 
-#         cart.remove_item("banana")
-#         self.assertEqual(len(cart.items), 0)
+        cart.remove_item("banana")
+        self.assertEqual(len(cart.items), 0)
 
 
 # ==================================================================================
@@ -713,7 +724,6 @@ from notebook import Note
 # Prepare two different instances of the Person class in the test fixture setUp() method. You should use a total of eight assertion methods.
 
 # Solution 18
-# import unittest
 # from person import Person
 
 
@@ -1036,4 +1046,4 @@ from notebook import Note
 #         self.assertTrue(self.system.detect_breach())
 # ==================================================================================
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)

@@ -1,5 +1,6 @@
 # Exercise 1
-# Using the unittest framework, create a TestSplitMethod class that inherits from the unittest.TestCase class and implements the following three tests:
+# Using the unittest framework, create a TestSplitMethod class that inherits from the unittest.TestCase
+#  class and implements the following three tests:
 
 # test_split_by_default()
 
@@ -57,9 +58,10 @@ import unittest
 # test that checks if the code '\n'.join(['open', 'high', 'low', 'close']) returns a list 'open\nhigh\nlow\nclose'
 
 # Solution 2
-import unittest
+# import unittest
 
-
+# # split --> convert a string to list
+# # Join --> list to string
 # class TestJoinMethod(unittest.TestCase):
 #     def test_join_with_space(self):
 #         self.assertEqual(' '.join(['Python', '3.8']), 'Python 3.8')
@@ -357,7 +359,10 @@ import unittest
 #         return string[::-1]
 
 
-# Create the unit test class named TestStringReverser and define the test cases. The test_reverse() method should test the reverse() method of the StringReverser class by creating a new instance of the class, calling the reverse() method with different strings, and checking that the return value matches the expected result using the assertEqual() method.
+# Create the unit test class named TestStringReverser and define the test cases.
+# The test_reverse() method should test the reverse() method of the StringReverser class by creating a
+# new instance of the class, calling the reverse() method with different strings,
+#  and checking that the return value matches the expected result using the assertEqual() method.
 
 # Test the reverse() method with three different strings:
 
@@ -427,7 +432,9 @@ import unittest
 # test_area_with_large_dimensions()
 
 
-# In the test_area() method tests the area() method of the Rectangle class by creating a new instance of the class with three different width and height values, calling the area() method, and checking that the return value matches the expected result using the assertEqual() method.
+# In the test_area() method tests the area() method of the Rectangle class
+# by creating a new instance of the class with three different width and height values,
+# calling the area() method, and checking that the return value matches the expected result using the assertEqual() method.
 
 # Solution 10
 # import unittest

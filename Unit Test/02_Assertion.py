@@ -22,50 +22,65 @@ import unittest
 
 import unittest
 
-
-class TestAssertions(unittest.TestCase):
-    def test_assertEqual(self):
-        self.assertEqual(5, 5)  # a == b
-
-    def test_assertNotEqual(self):
-        self.assertNotEqual(5, 6)  # a != b
-
-    def test_assertTrue(self):
-        self.assertTrue(True)  # bool(x) is True
-
-    def test_assertFalse(self):
-        self.assertFalse(False)  # bool(x) is False
-
-    def test_assertIs(self):
-        a = b = []
-        self.assertIs(a, b)  # a is b
-
-    def test_assertIsNot(self):
-        a = []
-        b = []
-        self.assertIsNot(a, b)  # a is not b
-
-    def test_assertIsNone(self):
-        self.assertIsNone(None)  # x is None
-
-    def test_assertIsNotNone(self):
-        self.assertIsNotNone(5)  # x is not None
-
-    def test_assertIn(self):
-        self.assertIn(3, [1, 2, 3])  # a in b
-
-    def test_assertNotIn(self):
-        self.assertNotIn(4, [1, 2, 3])  # a not in b
-
-    def test_assertIsInstance(self):
-        self.assertIsInstance(5, int)  # isinstance(a, b)
-
-    def test_assertNotIsInstance(self):
-        self.assertNotIsInstance(5, str)  # not isinstance(a, b)
+# verify if the button of app works
+# click on button --> opens a new webpage
 
 
-if __name__ == '__main__':
-    unittest.main()
+# def appcheckbutton():
+#     print()
+
+# class TestAssertions(unittest.TestCase):
+
+# def test_button(self):
+#     print(" Launching the application")# real time you need to write python code to launch that application/website
+#     buttonCheck= appcheckbutton('PLAY')
+#     self.assertTrue(buttonCheck)
+#     clockButton()
+#     assertEqual(read the currentpage, exepected page)
+
+#     def test_assertEqual(self):
+#         self.assertEqual(5, 5)  # a == b
+
+#     def test_assertNotEqual(self):
+#         self.assertNotEqual(5, 6)  # a != b
+
+#     def test_assertTrue(self):
+#         self.assertTrue(True)  # bool(x) is True
+
+#     def test_assertFalse(self):
+#         self.assertFalse(False)  # bool(x) is False
+
+#     def test_assertIs(self):
+#         a = b = []
+#         self.assertIs(a, b)  # a is b
+
+#     def test_assertIsNot(self):
+#         a = []
+#         b = []
+#         self.assertIsNot(a, b)  # a is not b
+
+#     def test_assertIsNone(self):
+#         x=None
+#         self.assertIsNone(x)  # x is None
+
+#     def test_assertIsNotNone(self):
+#         self.assertIsNotNone(5)  # x is not None
+
+#     def test_assertIn(self):
+#         self.assertIn(3, [1, 2, 3])  # a in b
+
+#     def test_assertNotIn(self):
+#         self.assertNotIn(4, [1, 2, 3])  # a not in b
+
+#     def test_assertIsInstance(self):
+#         self.assertIsInstance(5, int)  # isinstance(a, b)
+
+#     def test_assertNotIsInstance(self):
+#         self.assertNotIsInstance(5, str)  # not isinstance(a, b)
+
+
+# if __name__ == '__main__':
+#     unittest.main()
 
 
 # ==============================
@@ -87,7 +102,7 @@ if __name__ == '__main__':
 #         countries = ['POL', 'ENG', 'GER', 'USA', 'ITA']
 #         is_canada = 'CAN' in countries
 #         # 'CAN' is not in the list, so is_canada should be False
-#         self.assertFalse(is_canada)
+#         self.assertTrue(is_canada)
 
 
 # if __name__ == '__main__':
@@ -136,40 +151,46 @@ if __name__ == '__main__':
 # if __name__ == '__main__':
 #     max_min_diff([])
 
-def max_min_diff(numbers):
-    """
-    Calculates the difference between the maximum and minimum number
-    in the given list.
-
-    :param numbers: A list of numbers.
-    :return: The difference between the maximum and minimum number
-    in the list.
-    :raises AssertionError: If the list is empty.
-    """
-    assert len(numbers) != 0, 'The input list cannot be empty.'
-    return max(numbers) - min(numbers)
+# [1, 2, 3, 4, 5]
+# list is not empty
+# list contains only numbers
+# contains right digits
 
 
-class TestMaxMinDiff(unittest.TestCase):
-    def test_positive_numbers(self):
-        self.assertEqual(max_min_diff([1, 2, 3, 4, 5]), 4)
+# def max_min_diff(numbers):
+#     """
+#     Calculates the difference between the maximum and minimum number
+#     in the given list.
 
-    def test_negative_numbers(self):
-        self.assertEqual(max_min_diff([-10, -5, 0, 5, 10]), 20)
-
-    def test_mixed_numbers(self):
-        self.assertEqual(max_min_diff([3, -3, 3, -3, 3]), 6)
-
-    def test_single_element(self):
-        self.assertEqual(max_min_diff([42]), 0)
-
-    def test_empty_list(self):
-        with self.assertRaises(AssertionError):
-            max_min_diff([])
+#     :param numbers: A list of numbers.
+#     :return: The difference between the maximum and minimum number
+#     in the list.
+#     :raises AssertionError: If the list is empty.
+#     """
+#     assert len(numbers) != 0, 'The input list cannot be empty.'
+#     return max(numbers) - min(numbers)
 
 
-if __name__ == '__main__':
-    unittest.main()
+# class TestMaxMinDiff(unittest.TestCase):
+#     def test_positive_numbers(self):
+#         self.assertEqual(max_min_diff([1, 2, 3, 4, 5]), 4)
+
+#     def test_negative_numbers(self):
+#         self.assertEqual(max_min_diff([-10, -5, 0, 5, 10]), 20)
+
+#     def test_mixed_numbers(self):
+#         self.assertEqual(max_min_diff([3, -3, 3, -3, 3]), 6)
+
+#     def test_single_element(self):
+#         self.assertEqual(max_min_diff([42]), 0)
+
+#     def test_empty_list(self):
+#         with self.assertRaises(AssertionError):
+#             max_min_diff([])
+
+
+# if __name__ == '__main__':
+#     unittest.main()
 # ===============================
 # def rectangle_area(width: int, height: int) -> int:
 #     """
@@ -254,7 +275,7 @@ if __name__ == '__main__':
 #     def test_rectangle_area_valid(self):
 #         # Test with valid inputs
 #         self.assertEqual(rectangle_area(4, 10), 40)
-#         self.assertEqual(rectangle_area(5, 6), 30)
+#         self.assertEqual(rectangle_area(50, 60), 300)
 
 #     def test_rectangle_area_invalid_type(self):
 #         # Test with invalid type inputs
@@ -367,37 +388,37 @@ if __name__ == '__main__':
 # =============================
 
 
-def is_palindrome(string: str) -> bool:
-    """
-    Determines whether the given string is a palindrome.
+# def is_palindrome(string: str) -> bool:
+#     """
+#     Determines whether the given string is a palindrome.
 
-    :param string: The string to check.
-    :return: True if the string is a palindrome, False otherwise.
-    """
-    string = string.lower().replace(" ", "")
-    return string == string[::-1]
-
-
-class TestIsPalindrome(unittest.TestCase):
-    def test_racecar(self):
-        self.assertTrue(is_palindrome("racecar"))
-
-    def test_hello(self):
-        self.assertFalse(is_palindrome("hello"))
-
-    def test_panama(self):
-        self.assertTrue(is_palindrome("A man a plan a canal Panama"))
-
-    def test_numeric_palindrome(self):
-        self.assertTrue(is_palindrome("12321"))
-
-    def test_not_palindrome(self):
-        self.assertFalse(is_palindrome("not a palindrome"))
+#     :param string: The string to check.
+#     :return: True if the string is a palindrome, False otherwise.
+#     """
+#     string = string.lower().replace(" ", "")
+#     return string == string[::-1]
 
 
-if __name__ == '__main__':
-    unittest.main()
-# ===============================
+# class TestIsPalindrome(unittest.TestCase):
+#     def test_racecar(self):
+#         self.assertTrue(is_palindrome("racecar"))
+
+#     def test_hello(self):
+#         self.assertFalse(is_palindrome("hello"))
+
+#     def test_panama(self):
+#         self.assertTrue(is_palindrome("A man a plan a canal Panama"))
+
+#     def test_numeric_palindrome(self):
+#         self.assertTrue(is_palindrome("12321"))
+
+#     def test_not_palindrome(self):
+#         self.assertFalse(is_palindrome("not a palindrome"))
+
+
+# if __name__ == '__main__':
+#     unittest.main()
+# # ===============================
 
 
 def find_max_min(numbers: list) -> tuple:
@@ -410,6 +431,9 @@ def find_max_min(numbers: list) -> tuple:
     """
     if not numbers:
         raise ValueError("List is empty")
+
+    if not isinstance(number,list):
+        raise TypeError("Data is not list")
 
     maximum = minimum = numbers[0]
 
@@ -435,6 +459,10 @@ class TestFindMaxMin(unittest.TestCase):
     def test_single_element_list(self):
         self.assertEqual(find_max_min([0]), (0, 0))
 
+    def test_otherthany_list(self):
+        with self.assertRaises(TypeError):
+            find_max_min("python")
+    
     def test_empty_list(self):
         with self.assertRaises(ValueError):
             find_max_min([])
@@ -442,5 +470,6 @@ class TestFindMaxMin(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 
 # ========================================

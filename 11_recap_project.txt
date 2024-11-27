@@ -1,0 +1,19 @@
+Mini Project: Student Record Management System
+This mini-project simulates a basic Student Record Management System.
+It allows users to perform operations like adding, updating, deleting, and viewing student records. The project demonstrates the use of Python concepts such as:
+
+Strings: To handle student names and IDs.
+Lists: To store multiple student records.
+Dictionaries: To represent individual student records with details like name, age, and grades.
+Tuples: For immutable operations, like storing predefined menu options.
+File Handling: To save and load student records.
+Functions: To modularize the code into reusable components.
+Loops and If-Else Conditions: For navigation and logic implementation.
+=========================================
+Project Requirements
+Add a new student record.
+View all student records.
+Update an existing student record.
+Delete a student record.
+Save records to a file.
+Load records from a file.

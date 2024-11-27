@@ -27,7 +27,7 @@
 # Create a TestSuite object and add these two test cases to it. Then, run the TestSuite to ensure that both functions pass their unit tests.
 
 # Solution 1
-# import unittest
+import unittest
 
 
 # def calculate_rectangle_area(length, width):
@@ -181,16 +181,16 @@
 # Your task is to organize these two classes into a test suite using the TestSuite class from the unittest module and run the given tests.
 
 # Solution 4
-# import unittest
-# from test_animals import TestCats, TestDogs
+import unittest
+from test_animals import TestCats, TestDogs
 
 
-# suite = unittest.TestSuite()
+suite = unittest.TestSuite()
 
-# suite.addTest(unittest.makeSuite(TestCats))
-# suite.addTest(unittest.makeSuite(TestDogs))
+suite.addTest(unittest.makeSuite(TestCats))
+suite.addTest(unittest.makeSuite(TestDogs))
 
-# runner = unittest.TextTestRunner()
-# runner.run(suite)
+runner = unittest.TextTestRunner()
+runner.run(suite)
 
 # ==================================================================================

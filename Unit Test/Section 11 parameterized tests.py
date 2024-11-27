@@ -21,22 +21,24 @@
 # You only need to define the class and the appropriate tests. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 1
+from rectangle import area, perimeter
+# from tax import calc_tax
 import unittest
-from tax import calc_tax
+from tax import calculate_tax
 
 
 # class TestCalcTax(unittest.TestCase):
 #     def test_calc_tax_twenty_percent_and_eighteen_age(self):
-#         self.assertEqual(calc_tax(60000, 0.2, 18), 5000)
+#         self.assertEqual(calculate_tax(60000, 0.2, 18), 5000)
 
 #     def test_calc_tax_twenty_percent_and_nineteen_age(self):
-#         self.assertEqual(calc_tax(60000, 0.2, 19), 12000)
+#         self.assertEqual(calculate_tax(60000, 0.2, 19), 12000)
 
 #     def test_calc_tax_twenty_percent_and_sixty_five_age(self):
-#         self.assertEqual(calc_tax(60000, 0.2, 65), 12000)
+#         self.assertEqual(calculate_tax(60000, 0.2, 65), 12000)
 
 #     def test_calc_tax_twenty_percent_and_sixty_six_age(self):
-#         self.assertEqual(calc_tax(60000, 0.2, 66), 8000)
+#         self.assertEqual(calculate_tax(60000, 0.2, 66), 8000)
 # ==================================================================================
 
 # Exercise 2
@@ -74,8 +76,6 @@ from tax import calc_tax
 # You only need to define the class and the appropriate tests. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 2
-import unittest
-from tax import calc_tax
 
 
 # class TestCalcTax(unittest.TestCase):
@@ -94,7 +94,7 @@ from tax import calc_tax
 #                 expected=expected,
 #             ):
 #                 self.assertEqual(
-#                     calc_tax(amount, tax_rate, age), expected
+#                     calculate_tax(amount, tax_rate, age), expected
 #                 )
 # ==================================================================================
 
@@ -161,8 +161,6 @@ from tax import calc_tax
 # You only need to define the appropriate tests. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 4
-# import unittest
-# from rectangle import area, perimeter
 
 
 # class TestArea(unittest.TestCase):
@@ -485,7 +483,6 @@ from tax import calc_tax
 # [0, 0] -> None
 
 # Solution 11
-import unittest
 
 
 # def quotient(numbers):
@@ -652,71 +649,71 @@ import unittest
 # import unittest
 
 
-def reverse_dict(input_dict):
-    if not isinstance(input_dict, dict):
-        raise TypeError("Input must be a dictionary")
-    for key, value in input_dict.items():
-        if not isinstance(value, int):
-            raise ValueError("All values must be integers")
-    return {value: key for key, value in input_dict.items()}
+# def reverse_dict(input_dict):
+#     if not isinstance(input_dict, dict):
+#         raise TypeError("Input must be a dictionary")
+#     for key, value in input_dict.items():
+#         if not isinstance(value, int):
+#             raise ValueError("All values must be integers")
+#     return {value: key for key, value in input_dict.items()}
 
 
-class TestReverseDict(unittest.TestCase):
-    def test_reverse_dict(self):
-        test_cases = [
-            {
-                "input": {"one": 1, "two": 2, "three": 3},
-                "expected_output": {1: "one", 2: "two", 3: "three"},
-            },
-            {
-                "input": {"a": 0, "b": -1, "c": 10},
-                "expected_output": {0: "a", -1: "b", 10: "c"},
-            },
-            {"input": {}, "expected_output": {}},
-            {
-                "input": {"one": "1", "two": 2, "three": 3},
-                "expected_output": None,
-            },
-            {
-                "input": ["not a dictionary"],
-                "expected_output": None,
-            },
-            {
-                "input": {"one": 1, "two": "2", "three": 3},
-                "expected_output": None,
-            },
-            {
-                "input": {"one": 1, "two": 2, "three": "3"},
-                "expected_output": None,
-            },
-            {
-                "input": {"one": 1, "two": 2, 3: "three"},
-                "expected_output": None,
-            },
-        ]
+# class TestReverseDict(unittest.TestCase):
+#     def test_reverse_dict(self):
+#         test_cases = [
+#             {
+#                 "input": {"one": 1, "two": 2, "three": 3},
+#                 "expected_output": {1: "one", 2: "two", 3: "three"},
+#             },
+#             {
+#                 "input": {"a": 0, "b": -1, "c": 10},
+#                 "expected_output": {0: "a", -1: "b", 10: "c"},
+#             },
+#             {"input": {}, "expected_output": {}},
+#             {
+#                 "input": {"one": "1", "two": 2, "three": 3},
+#                 "expected_output": None,
+#             },
+#             {
+#                 "input": ["not a dictionary"],
+#                 "expected_output": None,
+#             },
+#             {
+#                 "input": {"one": 1, "two": "2", "three": 3},
+#                 "expected_output": None,
+#             },
+#             {
+#                 "input": {"one": 1, "two": 2, "three": "3"},
+#                 "expected_output": None,
+#             },
+#             {
+#                 "input": {"one": 1, "two": 2, 3: "three"},
+#                 "expected_output": None,
+#             },
+#         ]
 
-        for test_case in test_cases:
-            with self.subTest(test_case=test_case):
-                if not isinstance(test_case["input"], dict):
-                    self.assertRaises(
-                        TypeError,
-                        reverse_dict,
-                        test_case["input"],
-                    )
-                elif not all(
-                    isinstance(value, int)
-                    for value in test_case["input"].values()
-                ):
-                    self.assertRaises(
-                        ValueError,
-                        reverse_dict,
-                        test_case["input"],
-                    )
-                else:
-                    self.assertEqual(
-                        reverse_dict(test_case["input"]),
-                        test_case["expected_output"],
-                    )
+#         for test_case in test_cases:
+#             with self.subTest(test_case=test_case):
+#                 if not isinstance(test_case["input"], dict):
+#                     self.assertRaises(
+#                         TypeError,
+#                         reverse_dict,
+#                         test_case["input"],
+#                     )
+#                 elif not all(
+#                     isinstance(value, int)
+#                     for value in test_case["input"].values()
+#                 ):
+#                     self.assertRaises(
+#                         ValueError,
+#                         reverse_dict,
+#                         test_case["input"],
+#                     )
+#                 else:
+#                     self.assertEqual(
+#                         reverse_dict(test_case["input"]),
+#                         test_case["expected_output"],
+#                     )
 
 
 # =======================================================================================

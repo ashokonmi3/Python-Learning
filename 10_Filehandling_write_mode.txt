@@ -1,0 +1,3 @@
+This is for file ope##### r+ mode can insert the text inbetween as well ####it creates a new filewritelines() function is used to write a list to the file Every list element will become one line in the file when we use writelines() function
+This is append mode we need to use 'a' for append
+When we append data will be added at end

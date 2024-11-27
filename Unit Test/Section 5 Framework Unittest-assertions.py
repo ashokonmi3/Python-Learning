@@ -34,7 +34,7 @@ import unittest
 # You only need to implement test methods. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 1
-# import unittest
+import unittest
 
 
 # def calculate_daily_return(
@@ -90,11 +90,11 @@ import unittest
 # print(round(3.14159))  # Output: 3
 # print(round(2.71828))  # Output: 3
 
-# # Rounding to a specific number of decimal places:
+# # # Rounding to a specific number of decimal places:
 # print(round(3.14159, 2))  # Output: 3.14
 # print(round(2.71828, 3))  # Output: 2.718
 
-# # Rounding with negative ndigits (rounding to tens, hundreds, etc.):
+# # # Rounding with negative ndigits (rounding to tens, hundreds, etc.):
 # print(round(1234.5678, -1))  # Output: 1230.0
 # print(round(1234.5678, -2))  # Output: 1200.0
 # =========================================
@@ -243,7 +243,7 @@ import unittest
 # You only need to implement the class and the appropriate test methods. During the solution verification, the tests are run and in case of any errors, the test report will be printed to the console.
 
 # Solution 4
-# import unittest
+import unittest
 
 
 # class Doc:
@@ -388,7 +388,9 @@ import unittest
 #         msg = 'The Employee class does not have an apply_bonus attr.'
 #         self.assertTrue(hasattr(Employee, 'apply_bonus'), msg)
 
-
+# print(emp1.email)
+# print()
+# emp1.tax= 100
 # ==================================================================================
 # Exercise 6
 # The implementation of the Employee class is given:
@@ -534,13 +536,16 @@ import unittest
 #                 'Only object of type str can be added to the list.'
 #             )
 #         super().append(string)
+#         print(list())
 
 
 # class TestStringListOnly(unittest.TestCase):
+
 #     def test_append_string(self) -> None:
 #         slo = StringListOnly()
 #         string = 'big_data'
 #         slo.append(string)
+#         print(slo)
 #         self.assertIn(string, slo)
 
 #     def test_append_not_string_should_raise_error(self) -> None:
@@ -638,21 +643,30 @@ import unittest
 # class TestCalculator(unittest.TestCase):
 #     def setUp(self) -> None:
 #         self.calculator = Calculator()
+#         print("setUP")
 
 #     def test_divide_positive_numbers(self) -> None:
+#         print("test_divide_positive_numbers")
 #         self.assertEqual(self.calculator.divide(10, 2), 5)
 
 #     def test_divide_zero_by_positive_number(self) -> None:
+#         print("test_divide_zero_by_positive_number")
+
 #         self.assertEqual(self.calculator.divide(0, 5), 0)
 
 #     def test_divide_negative_by_positive_number(self) -> None:
+#         print("test_divide_negative_by_positive_number")
+
 #         self.assertEqual(self.calculator.divide(-10, 2), -5)
 
 #     def test_divide_by_zero_should_raise_error(self) -> None:
+#         print("test_divide_by_zero_should_raise_error")
+
 #         with self.assertRaises(ValueError):
 #             self.calculator.divide(10, 0)
 
 #     def tearDown(self) -> None:
+#         print("TearDown")
 #         del self.calculator
 
 # ==================================================================================
@@ -677,25 +691,25 @@ import unittest
 # test_count_lines_of_non_existing_file(): The second test case checks that the count_lines() function raises a FileNotFoundError exception when given a non-existing file named non_existing_script.py.
 
 # Solution 10
-# import unittest
+import unittest
 
 
-# def count_lines(filename: str) -> int:
-#     try:
-#         with open(filename, 'r') as f:
-#             lines = f.readlines()
-#             return len(lines)
-#     except FileNotFoundError as e:
-#         raise FileNotFoundError(f"File {filename} not found") from e
+def count_lines(filename: str) -> int:
+    try:
+        with open(filename, 'r') as f:
+            lines = f.readlines()
+            return len(lines)
+    except FileNotFoundError as e:
+        raise FileNotFoundError(f"File {filename} not found") from e
 
 
-# class TestCountLines(unittest.TestCase):
-#     def test_count_lines_of_existing_file(self) -> None:
-#         self.assertEqual(count_lines('evaluate.py'), 21)
+class TestCountLines(unittest.TestCase):
+    def test_count_lines_of_existing_file(self) -> None:
+        self.assertEqual(count_lines('evaluate.py'), 21)
 
-#     def test_count_lines_of_non_existing_file(self) -> None:
-#         with self.assertRaises(FileNotFoundError):
-#             count_lines('non_existing_script.py')
+    def test_count_lines_of_non_existing_file(self) -> None:
+        with self.assertRaises(FileNotFoundError):
+            count_lines('non_existing_script.py')
 
 # ==================================================================================
 # Exercise 11
@@ -734,26 +748,26 @@ def calculate_grade(scores):
     return sum(scores) / len(scores)
 
 
-class TestCalculateGrade(unittest.TestCase):
-    def test_valid_input(self):
-        self.assertAlmostEqual(
-            calculate_grade([90, 80, 70, 60]), 75.0, places=2
-        )
-        self.assertAlmostEqual(
-            calculate_grade([100, 90, 80, 70]), 85.0, places=2
-        )
-        self.assertAlmostEqual(
-            calculate_grade([50, 60, 70, 80]), 65.0, places=2
-        )
-        self.assertAlmostEqual(
-            calculate_grade([85, 75, 95, 80, 70]), 81.0, places=2
-        )
-        self.assertAlmostEqual(
-            calculate_grade([60, 80, 75, 70]), 71.25, places=2
-        )
-        self.assertAlmostEqual(
-            calculate_grade([100, 90]), 95.0, places=2
-        )
+# class TestCalculateGrade(unittest.TestCase):
+#     def test_valid_input(self):
+#         self.assertAlmostEqual(
+#             calculate_grade([90, 80, 70, 60]), 75.0, places=2
+#         )
+#         self.assertAlmostEqual(
+#             calculate_grade([100, 90, 80, 70]), 85.0, places=2
+#         )
+#         self.assertAlmostEqual(
+#             calculate_grade([50, 60, 70, 80]), 65.0, places=2
+#         )
+#         self.assertAlmostEqual(
+#             calculate_grade([85, 75, 95, 80, 70]), 81.0, places=2
+#         )
+#         self.assertAlmostEqual(
+#             calculate_grade([60, 80, 75, 70]), 71.25, places=2
+#         )
+#         self.assertAlmostEqual(
+#             calculate_grade([100, 90]), 95.0, places=2
+#         )
 
 
 # ==================================================================================
