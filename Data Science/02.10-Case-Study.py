@@ -1,9 +1,15 @@
 # Case Study: Analyzing Student Exam Scores with NumPy
 # Objective:
-# In this case study, we will use NumPy to analyze the exam scores of a group of students. We will simulate a dataset of student exam scores, perform various statistical analyses, and visualize the results.
+# 
+# 
+# 
+# 
+# Use NumPy to analyze the exam scores of a group of students.
+# We will simulate a dataset of student exam scores, perform various statistical analyses, and visualize the results.
 
 # Scenario:
-# Imagine you are a data analyst at a school. The school has conducted exams for 100 students across three subjects: Math, Science, and English. You need to analyze the data to:
+# Imagine you are a data analyst at a school. The school has conducted exams for 100 students across three subjects: 
+# Math, Science, and English. You need to analyze the data to:
 
 # Find the average scores of each student.
 # Calculate the subject-wise average scores.
@@ -11,7 +17,17 @@
 # Detect students who need improvement(students who scored below 40 in any subject).
 # Visualize the distribution of scores for each subject.
 # Step 1: Create the Data
-# We will simulate the data for 100 students, each with scores in Math, Science, and English. We'll use NumPy to generate this data.
+# We will simulate the data for 100 students, 
+# each with scores in Math, Science, and English. We'll use NumPy to generate this data.
+
+
+
+
+
+
+
+
+
 
 import matplotlib.pyplot as plt
 import numpy as np

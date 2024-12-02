@@ -7,12 +7,12 @@
 # ls -la the database will be created
 #
 # from sqlite3 import *
-import mysql.connector
-import sqlite3
-import sys
+# import mysql.connector
+# import sqlite3
+# import sys
 
-conn = sqlite3.connect('test.db')
-print("Opened database successfully")
+# conn = sqlite3.connect('test.db')
+# print("Opened database successfully")
 # print(type(conn))
 # # conn = sqlite3.connect('my_database233231.db')
 
@@ -92,13 +92,13 @@ print("Opened database successfully")
 # #
 #
 # ===============================
-mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    passwd="root123"
-)
+# mydb = mysql.connector.connect(
+#     host="localhost",
+#     user="root",
+#     passwd="root123"
+# )
 
-print(mydb)
+# print(mydb)
 
 # ========================================
 # create a database named "mydatabase":

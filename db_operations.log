@@ -1,0 +1,14 @@
+2024-12-01 11:16:55,527 - INFO - Connected to the database.
+2024-12-01 11:16:55,527 - INFO - Table 'Users' created successfully.
+2024-12-01 11:16:55,527 - INFO - Sample data inserted successfully.
+2024-12-01 11:16:55,527 - INFO - Data updated successfully for user 'Bob'.
+2024-12-01 11:16:55,545 - INFO - Data deleted successfully for user 'Charlie'.
+2024-12-01 11:16:55,547 - INFO - Counted total users: 2
+2024-12-01 11:16:55,550 - INFO - Connection closed.
+2024-12-01 11:18:46,477 - INFO - Connected to the database.
+2024-12-01 11:18:46,709 - INFO - Table 'Users' created successfully.
+2024-12-01 11:18:46,794 - INFO - Data inserted successfully.
+2024-12-01 11:18:46,803 - INFO - Data updated successfully for user 'Bob'.
+2024-12-01 11:18:46,807 - INFO - Data deleted successfully for user 'Charlie'.
+2024-12-01 11:18:46,809 - INFO - Counted total users: 2
+2024-12-01 11:18:46,812 - INFO - Connection closed.
