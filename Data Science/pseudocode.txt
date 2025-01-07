@@ -1,0 +1,61 @@
+For i =1 to 10 Do
+    print i
+
+while count < 5 Do
+    Print count
+    count = count+1
+
+Do 
+    print count 
+    count = count +1
+While count < 5
+
+Function functionName(arguments)
+    print arguments
+    return value
+// this is for comments
+
+arrayName=['Anjana', 'Trisha' 'Nayna']
+print arrayName[0]
+
+Naming convention
+camelCasing
+pascal_casing
+
+Variable 
+calculateTotalPrice
+orderDetails
+elementLocator
+
+comments
+// single line comment 
+
+/* multiple line comment 
+this is second line
+*/
+
+Follow consistent indention and spacing
+
+MX_MARKS= 50
+
+if score> MX_MARKS :
+    print( more than max)
+
+Subroutine/Function
+calculaeTotalprice()
+calculateBonus(salary)
+    newSalary= salary+salary*10/100
+    bonus= salary*2/100
+    print(newsalary)
+    print(bonus)
+    return bonus
+
+    coupling
+    cohesion
+    
+    Correctness
+    robustness
+
+    
+    20-30
+sortEmployee()

@@ -16,14 +16,14 @@
 # # ==========================
 # Reverse of string
 # python 19_CommandlineArg.py python
-# import sys
-# s = sys.argv[1]
-# print(f"Input string is :  {s}")
-# print(f"Reverse of string : {s[::-1]}")
-# if s == s[::-1]:
-#     print("pellindrome")
-# else:
-#     print("It is not a pellindrom")
+import sys
+s = sys.argv[1]
+print(f"Input string is :  {s}")
+print(f"Reverse of string : {s[::-1]}")
+if s == s[::-1]:
+    print("pellindrome")
+else:
+    print("It is not a pellindrom")
 # =========================
 
 

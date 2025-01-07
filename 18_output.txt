@@ -1,0 +1,3 @@
+this is python learning
+Python learning is fun
+Its interpreter based language
